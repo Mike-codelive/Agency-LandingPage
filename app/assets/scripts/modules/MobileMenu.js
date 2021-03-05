@@ -1,8 +1,8 @@
 class MobileMenu {
   constructor() {
-    this.menuIcon = document.querySelector(".site-header__menu-icon")
-    this.menuContent = document.querySelector(".site-header__menu-content")
-    this.siteHeader = document.querySelector(".site-header")
+    this.menuIcon = document.querySelector(".navbar__menu-icon")
+    this.menuContent = document.querySelector(".navbar__links")
+    // this.siteHeader = document.querySelector(".site-header")
     this.events()
   }
 
@@ -11,9 +11,9 @@ class MobileMenu {
   }
 
   toggleTheMenu() {
-    this.menuContent.classList.toggle("site-header__menu-content--is-visible")
-    this.siteHeader.classList.toggle("site-header--is-expanded")
-    this.menuIcon.classList.toggle("site-header__menu-icon--close-x")
+    this.menuContent.classList.toggle("navbar__links--is-visible")
+    this.menuIcon.classList.toggle("navbar__menu-icon--close-x")
+    // this.siteHeader.classList.toggle("site-header--is-expanded")
   }
 }
 

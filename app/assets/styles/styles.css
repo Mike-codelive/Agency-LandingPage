@@ -1,8 +1,8 @@
 @import "normalize.css";
-@import "modules/_navbar.css";
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
+@import "modules/_navbar.css";
 @import "modules/_large-hero";
 @import "modules/_btn";
 @import "modules/_wrapper";
