@@ -8,7 +8,15 @@ $secondary-dark: $black-x;
 $primary-white: #FFFFFF;
 
 
+/* Extends
+-------------------------------------------------------------- */
+%max-width-center {
+	max-width: 1920px;
+	margin: 0 auto;
+}
 
+/* Global Styles
+-------------------------------------------------------------- */
 html {
 	scroll-behavior: smooth;
 }
@@ -24,4 +32,9 @@ img {
 
 a {
 	text-decoration: none;
+}
+
+.max-width-center {
+	max-width: 1920px;
+	margin: 0 auto;
 }

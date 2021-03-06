@@ -12,6 +12,7 @@ class NavLinkReveal {
 
 	toggleContent() {
 		this.content.classList.toggle("navbar__content--expanded");
+		this.navLink.classList.toggle("navbar__dropcontent--active");
 	}
 }
 

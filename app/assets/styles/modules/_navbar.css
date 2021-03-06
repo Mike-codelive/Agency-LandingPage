@@ -1,44 +1,60 @@
 .navbar {
 
+	@extend %max-width-center;
+	height: 60px;
+	background-color: blue;
+
 	ul {
 		list-style: none;
+		padding-left: 0;
+	}
+
+	&__logo {
+		width: 150px;
+		vertical-align: middle;
 	}
 
 	&__links {
+		margin-top: 30px;
 		background-color: $primary-dark;
 		color: $primary-white;
-		opacity: 0;
-		height: 0;
-		transition: all .3s ease-out;
-		position: relative;
-		/*transform: scale(1);*/
-		/*z-index: -10;*/
-		/*transform-origin: 0 0;*/
+		display: none;
+		animation: growDown 300ms ease-in-out forwards;
+		transform-origin: top center;
+		cursor: pointer;
 
 		&--is-visible {
-			opacity: 1;
 			z-index: 1;
-			/*transform: scale(1);*/
-			height: auto;
+			display: block;
 		}
 
 		& li {
 			padding: 2rem;
+			&:hover {
+				background-color: $primary-white;
+				color: $primary-dark;
+			}
 		}
 	}
 
 	&__dropcontent {
 		display: flex;
 		justify-content: space-between;
+		&--active {
+			background-color: $primary-white;
+			color: $primary-dark;
+		}
 	}
 
 	&__content {
 		display: none;
-		transform: scaleY(0);
-		transition: all 2s linear;
+		animation: growDown 300ms ease-in-out forwards;
+		transform-origin: top center;
+		& li {
+			padding-left: 50px; 
+		}
 		&--expanded {
 			display: block;
-			transform: scaleY(1);
 		}
 	}
 
@@ -47,8 +63,8 @@
 		height: 19px;
 		position: absolute;
 		z-index: 10;
-		top: 10px;
-		right: 10px;
+		top: 20px;
+		right: 20px;
 
 		&::before {
 			content: "";
@@ -69,8 +85,8 @@
 			width: 20px;
 			height: 3px;
 			background-color: $secondary-dark;
-			transition: all .3s ease-out;
 			transform-origin: 0 50%;
+			transition: all .3s ease-out;
 		}
 
 		&::after {
@@ -102,4 +118,31 @@
 		}
 	}
 
+	&__btn {
+		display: none;
+	}
+
+}
+
+@keyframes growDown {
+	0% {
+		transform: scaleY(0)
+	}
+	80% {
+		transform: scaleY(1.1)
+	}
+	100% {
+		transform: scaleY(1)
+	}
+}	
+@keyframes growUp {
+	0% {
+		transform: scaleY(1)
+	}
+	80% {
+		transform: scaleY(1.1)
+	}
+	100% {
+		transform: scaleY(0)
+	}
 }
