@@ -4,13 +4,12 @@
 
 
 
-$black-nav: #1F2041;
-$black-x: #1F2041;
+$black-Nav: #1F2041;
 $blue-btn: #0496ff;
 
 
-$primary-dark: $black-nav;
-$secondary-dark: $black-x;
+$primary-dark: $black-Nav;
+$secondary-dark: $black-Nav;
 $main-Blue: $blue-btn;
 $primary-white: #FFFFFF;
 
