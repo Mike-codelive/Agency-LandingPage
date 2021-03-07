@@ -1,4 +1,16 @@
-.swiper-container {
-  width: 600px;
-  height: 300px;
+.hero {
+
+	cursor: grab;
+	.swiper-container {
+		width: 100%;
+		height: calc(95vh - 60px);
+	}
+
+	&__img {
+		/*height: 95vh;*/
+		width: 100%
+	}
+
 }
+
+
