@@ -79,6 +79,24 @@
 	&__dropcontent {
 		display: flex;
 		justify-content: space-between;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 4px;
+			top: 0;
+			left: 10px;
+			background-color: $dashed-Blue;
+			visibility: hidden;
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:hover:before {
+			visibility: visible;
+			width: 80%;
+		}
 
 /*		&:hover ~ .navbar__content {
 			display: block;
