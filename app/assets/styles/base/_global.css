@@ -7,12 +7,18 @@
 $black-Nav: #1F2041;
 $blue-btn: #0496ff;
 $navy-Blue: #0272B1;
+$light-Purple: #1F2041;
+$yellow: #F6CC00;
+$transparent: transparent;
 
 
 $primary-dark: $black-Nav;
 $secondary-dark: $black-Nav;
 $main-Blue: $blue-btn;
 $dashed-Blue: $navy-Blue;
+$main-Hero: $light-Purple;
+$secondary-Btn: $yellow;
+$absent-color: $transparent;
 $primary-white: #FFFFFF;
 
 
@@ -30,6 +36,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+/*@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+*/
 img {
 	max-width: 100%;
 	height: auto;

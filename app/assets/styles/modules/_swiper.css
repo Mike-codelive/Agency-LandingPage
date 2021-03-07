@@ -1,14 +1,47 @@
 .hero {
 
-	cursor: grab;
 	.swiper-container {
 		width: 100%;
 		height: calc(95vh - 60px);
 	}
 
+	&__info {
+		width: 1070px;
+	}
+
+	.swiper-slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	&__img {
-		/*height: 95vh;*/
-		width: 100%
+		&--1 {
+			background-image: linear-gradient(
+				rgba($main-Hero, 0.41), rgba($main-Hero, 0.41)),
+			url(../assets/images/hero-1.webp);
+			background-size: cover;
+			background-position: center;
+		}
+		&--2 {
+			background-image: linear-gradient(
+				rgba($main-Hero, 0.41), rgba($main-Hero, 0.41)),
+			url(../assets/images/hero-2.webp);
+			background-size: cover;
+			background-position: center;
+		}
+		&--3 {
+			background-image: linear-gradient(
+				rgba($main-Hero, 0.41), rgba($main-Hero, 0.41)),
+			url(../assets/images/hero-3.webp);
+			background-size: cover;
+			background-position: center;
+		}
+	}
+
+	&__info {
+		color: $primary-white;
+		
 	}
 
 }

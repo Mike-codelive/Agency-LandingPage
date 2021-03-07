@@ -1,25 +1,37 @@
 .btn {
-  background-color: $main-Blue;
-  color: $primary-white;
+
   text-decoration: none;
-  height: 35px;
-  width: 110px;
   text-align: center;
   padding: 10px;
-  margin-right: 5px;
   border-radius: 5px;
-  align-self: center;
-  display: none;
   transition: background .3s ease-out;
-  /*line-height: 1.15;*/
-  @mixin atLarge {
-    display: block;
+
+  &--blue-nav {
+    margin-right: 5px;
+    align-self: center;
+    display: none;
+    height: 35px;
+    width: 110px;
+    background-color: $main-Blue;
+    color: $primary-white;
+    &:hover {
+      background-color: $primary-white;
+      color: $main-Blue;
+      border: solid $main-Blue 1px;
+    }
+    @mixin atLarge {
+      display: block;
+    }
   }
 
-  &:hover {
-    /*line-height: 1.15;*/
-    background-color: $primary-white;
-    color: $main-Blue;
-    border: solid $main-Blue 1px;
+  &--yellow {
+    background-color: $secondary-Btn;
+    color: $primary-dark;
+    /*padding: */
+    &:hover {
+      color: $primary-white;
+      background-color: $absent-color;
+      border: solid $secondary-Btn 2px;
+    }
   }
 }
