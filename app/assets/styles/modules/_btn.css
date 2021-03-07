@@ -1,20 +1,20 @@
 .btn {
-  background-color: $mainBlue;
-  color: #FFF;
+  background-color: $main-Blue;
+  color: $primary-white;
   text-decoration: none;
-  padding: .75rem 1.2rem;
-  display: inline-block;
-
-  &--orange {
-    background-color: $mainOrange;
+  height: 35px;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  align-self: center;
+  display: none;
+  @mixin atLarge {
+    display: block;
   }
 
-  &--large {
-    padding: 1.1rem 1.9rem;
-
-    @mixin atSmall {
-      font-size: 1.25rem;
-    }
+  &:hover {
+    background-color: $primary-white;
+    color: $main-Blue;
+    border: solid $main-Blue 1px;
   }
-
 }

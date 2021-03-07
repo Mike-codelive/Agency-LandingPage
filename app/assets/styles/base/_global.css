@@ -1,11 +1,19 @@
+/* Fonts
+-------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 
 $black-nav: #1F2041;
 $black-x: #1F2041;
+$blue-btn: #0496ff;
 
 
 $primary-dark: $black-nav;
 $secondary-dark: $black-x;
+$main-Blue: $blue-btn;
 $primary-white: #FFFFFF;
+
 
 
 /* Extends
