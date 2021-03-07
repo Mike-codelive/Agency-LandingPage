@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "dependencies": {
     "lazysizes": "^5.1.2",
     "lodash": "^4.17.15",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swiper": "^6.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
