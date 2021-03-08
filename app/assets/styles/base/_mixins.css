@@ -16,6 +16,18 @@
   }
 }
 
+@define-mixin minNavWidth {
+  @media (min-width: 1070px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin maxNavWidth {
+  @media (max-width: 1070px) {
+    @mixin-content;
+  }
+}
+
 @define-mixin clearfix {
   &::after {
     content: "";

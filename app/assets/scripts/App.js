@@ -6,7 +6,7 @@ import MobileMenu from './modules/MobileMenu'
 // import StickyHeader from './modules/StickyHeader'
 import NavLinkReveal from './modules/NavLinkReveal'
 
-Swiper
+
 // new StickyHeader();
 new NavLinkReveal();
 // new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)

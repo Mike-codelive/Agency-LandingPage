@@ -2,11 +2,11 @@
 
   text-decoration: none;
   text-align: center;
-  padding: 10px;
   border-radius: 5px;
   transition: background .3s ease-out;
 
   &--blue-nav {
+    padding: 10px;
     margin-right: 5px;
     align-self: center;
     display: none;
@@ -27,7 +27,7 @@
   &--yellow {
     background-color: $secondary-Btn;
     color: $primary-dark;
-    /*padding: */
+    padding: 12px 24px;
     &:hover {
       color: $primary-white;
       background-color: $absent-color;
