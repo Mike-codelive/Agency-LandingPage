@@ -1,9 +1,11 @@
 import '../styles/styles.css'
 import 'lazysizes'
+import Swiper from './modules/swiper';
 import MobileMenu from './modules/MobileMenu'
-import RevealOnScroll from './modules/RevealOnScroll'
-import StickyHeader from './modules/StickyHeader'
+// import RevealOnScroll from './modules/RevealOnScroll'
+// import StickyHeader from './modules/StickyHeader'
 import NavLinkReveal from './modules/NavLinkReveal'
+
 
 // new StickyHeader();
 new NavLinkReveal();
@@ -11,6 +13,7 @@ new NavLinkReveal();
 // new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
 new MobileMenu();
 let modal
+
 
 document.querySelectorAll(".open-modal").forEach(el => {
   el.addEventListener("click", e => {

@@ -14,4 +14,15 @@
 
 .btn {
 	font-family: 'Roboto', sans-serif;
+	&--yellow {
+		font-size: 15px;
+		font-weight: 700;
+	}
+}
+
+.hero {
+	font-family: "Lato", Lato, Sans-serif;
+	&__title {
+		font-size: 2.8rem;
+	}
 }

@@ -1,6 +1,8 @@
 .navbar {
 
 	/*@extend %max-width-center;*/
+	position: fixed;
+	position: relative;
 	height: 60px;
 	background-color: $primary-white;
 	box-shadow: 0 1rem 3rem rgba($primary-dark, .1);
@@ -118,7 +120,7 @@
 			display: none;
 			animation: growDown 300ms ease-in-out forwards;
 			transform-origin: top center;
-			z-index: 10;
+			
 			@mixin atLarge {
 				/*margin-top: 6px;*/
 				position: absolute;

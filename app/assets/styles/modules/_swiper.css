@@ -1,0 +1,59 @@
+.hero {
+
+	.swiper-container {
+		width: 100%;
+		height: calc(95vh - 60px);
+		z-index: -15;
+	}
+
+	.swiper-slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__info {
+		color: $primary-white;
+		width: 1070px;		
+		@mixin maxNavWidth {
+			padding: 0 2rem;
+		}
+	}
+
+	&__title {
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		margin-bottom: 45px;
+		line-height: 2rem;
+	}
+
+	&__img {
+		&--1 {
+			background-image: linear-gradient(
+				rgba($main-Hero, 0.41), rgba($main-Hero, 0.41)),
+			url(../assets/images/hero-1.webp);
+			background-size: cover;
+			background-position: center;
+		}
+		&--2 {
+			background-image: linear-gradient(
+				rgba($main-Hero, 0.41), rgba($main-Hero, 0.41)),
+			url(../assets/images/hero-2.webp);
+			background-size: cover;
+			background-position: center;
+		}
+		&--3 {
+			background-image: linear-gradient(
+				rgba($main-Hero, 0.41), rgba($main-Hero, 0.41)),
+			url(../assets/images/hero-3.webp);
+			background-size: cover;
+			background-position: center;
+		}
+	}
+
+
+}
+
+
