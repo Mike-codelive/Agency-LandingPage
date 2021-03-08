@@ -12,7 +12,7 @@ const swiper = new Swiper('.swiper-container', {
   	disableOnInteraction: false,
   },
   coverflowEffect: {
-    depth: 1,
+    depth: 0,
     slideShadows: false,
   },
   scrollbar: {

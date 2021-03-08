@@ -1,9 +1,10 @@
 .hero {
+	
+	padding-top: 60px;
 
 	.swiper-container {
 		width: 100%;
 		height: calc(95vh - 60px);
-		z-index: -15;
 	}
 
 	.swiper-slide {
