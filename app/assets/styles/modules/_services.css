@@ -1,0 +1,20 @@
+.services {
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 3rem;
+
+	&__info {
+		text-align: center;
+	}
+
+	&__cards {
+		display: flex;
+	}
+}
+
+
+   /* filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 
+0deg
+ );*/
