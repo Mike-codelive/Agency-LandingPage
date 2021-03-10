@@ -6,21 +6,12 @@
   transition: background .3s ease-out;
 
   &--blue {
-    padding: 10px;
-    margin-right: 5px;
-    align-self: center;
-    display: none;
-    height: 35px;
-    width: 110px;
     background-color: $main-Blue;
     color: $primary-white;
     &:hover {
       background-color: $primary-white;
       color: $main-Blue;
       border: solid $main-Blue 1px;
-    }
-    @mixin atLarge {
-      display: block;
     }
   }
 
@@ -33,5 +24,24 @@
       background-color: $absent-color;
       border: solid $secondary-Btn 2px;
     }
+  }
+
+  &--navbar {
+    padding: 10px;
+    margin-right: 5px;
+    align-self: center;
+    display: none;
+    height: 35px;
+    width: 110px;
+    @mixin atLarge {
+      display: block;
+    }
+  }
+
+  &--services {
+    align-self: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    padding: 12px 24px;
   }
 }

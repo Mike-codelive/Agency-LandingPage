@@ -24,6 +24,8 @@ $primary-white: #FFFFFF;
 
 
 
+
+
 /* Extends
 -------------------------------------------------------------- */
 %max-width-center {
@@ -55,7 +57,13 @@ a {
 	text-decoration: none;
 }
 
-.max-width-center {
+
+.max-width-nav-center {
 	max-width: 1920px;
 	margin: 0 auto;
+}
+
+.max-width-nav-center {
+	max-width: 1139px;
+	margin: 0 auto;	
 }
