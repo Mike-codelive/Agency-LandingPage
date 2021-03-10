@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-/* Variables
+/* Color Variables
 -------------------------------------------------------------- */
 $black-Nav: #1F2041;
 $blue-btn: #0496ff;
@@ -23,15 +23,6 @@ $absent-color: $transparent;
 $primary-white: #FFFFFF;
 
 
-
-
-
-/* Extends
--------------------------------------------------------------- */
-%max-width-center {
-	max-width: 1920px;
-	margin: 0 auto;
-}
 
 /* Global Styles
 -------------------------------------------------------------- */
@@ -55,12 +46,6 @@ img {
 
 a {
 	text-decoration: none;
-}
-
-
-.max-width-nav-center {
-	max-width: 1920px;
-	margin: 0 auto;
 }
 
 .max-width-nav-center {

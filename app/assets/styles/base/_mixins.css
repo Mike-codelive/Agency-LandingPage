@@ -35,3 +35,42 @@
     display: table;
   }
 }
+
+
+$breakpoint-small: '360px';
+$breakpoint-medium: '720px';
+$breakpoint-large: '1080px';
+
+
+mixin mediaQuery($query) {
+  $queries: (
+    small-only: '(max-width: #{$breakpoint-small})',
+    medium-only: '(min-width: #{$breakpoint-small}) and (max-width: #{$breakpoint-medium})',
+    large-only: '(min-width: #{$breakpoint-medium}) and (max-width: #{$breakpoint-large})',
+    medium-up: '(min-width: #{$breakpoint-small})',
+    large-up: '(min-width: #{$breakpoint-medium})'
+    );
+
+  @if map-has-key($queries, $query) {
+    // Get the query value from the map.
+    $query-value: map-get($queries, $query);
+
+    // Write the media query.
+    @media #{$query-value} {
+      @content;
+    }
+    } @else {
+      // Log a warning if the media query doesn't exist in the map.
+      @warn 'Invalid media query: #{$query}.';
+    }
+  }
+
+
+  /*examples*/
+ /* @include mediaQuery(small-only) {
+  font-size: $text-small;
+}
+
+@include mediaQuery(medium-up) {
+  font-size: $text-medium;
+}*/

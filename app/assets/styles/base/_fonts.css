@@ -1,6 +1,8 @@
 .navbar {
+
 	font-family: "Lato", Lato, Sans-serif;
 	font-weight: 600;
+	
 	@mixin atLarge {
 		font-size: 14px;
 	}
@@ -13,9 +15,10 @@
 }
 
 .btn {
+
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
-	
+
 	&--yellow {
 		font-weight: 700;
 	}
@@ -26,7 +29,9 @@
 }
 
 .hero {
+
 	font-family: "Lato", Lato, Sans-serif;
+
 	&__title {
 		font-size: 2.8rem;
 	}
@@ -49,6 +54,5 @@
 	&__card-text {
 		font-weight: 900;
 		line-height: 1.2em;
-
 	}
 }

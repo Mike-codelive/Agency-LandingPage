@@ -7,20 +7,21 @@
 	box-shadow: 0 1rem 3rem rgba($primary-dark, .1);
 	z-index: 9999999;
 
+	ul {
+		list-style: none;
+		padding-left: 0;
+	}
+
 	&__center {
 		@mixin atLarge {
 			max-width: 1139px;
 			display: flex;
 			align-content: center;
 			justify-content: space-between;
-			height: 100%;
+			/*height: 100%;
+			width: 100%;*/
 			margin: 0 auto;
 		}
-	}
-
-	ul {
-		list-style: none;
-		padding-left: 0;
 	}
 
 	&__logo {
@@ -36,10 +37,12 @@
 		margin-top: 13px;
 		background-color: $primary-dark;
 		color: $primary-white;
-		display: none;
-		animation: growDown 300ms ease-in-out forwards;
-		transform-origin: top center;
+		transition: 0.3s ease-in-out;
+		transition-property: transform, background-color;
+		transform: scaleY(0);
+		transform-origin: top;
 		cursor: pointer;
+		height: 0;
 
 		@mixin atLarge {
 			display: flex;
@@ -49,15 +52,13 @@
 			background-color: transparent;
 			color: $primary-dark;
 			height: 100%;
+			transform: scaleY(1);
 		}
 
 		&--is-visible {
-			z-index: 1;
-			display: block;
-		}
-
-		&--is-reverse {
-			animation-direction: reverse;
+			/*z-index: 1;*/
+			transform: scaleY(1);
+			height: 100%;
 		}
 
 		& li {
@@ -73,9 +74,10 @@
 		}
 	}
 
-	&__sub:hover .navbar__content {
+	&__sub:hover &__content {
 		@mixin atLarge {
-			display: block;
+			height: 100%;
+			transform: scaleY(1);
 		}
 	}
 
@@ -101,117 +103,114 @@
 			width: 80%;
 		}
 
-		&--active {
-			background-color: $primary-white;
-			color: $primary-dark;
-		}
-	}
+/*		&:hover .navbar__content {
+			display: block;
+			}*/
 
-	.fa-caret-down {
-		@mixin atLarge {
-			margin-left: 5px; 
-		}
-	}
-
-	&__content {
-		display: none;
-		animation: growDown 300ms ease-in-out forwards;
-		transform-origin: top center;
-
-		@mixin atLarge {
-			/*margin-top: 6px;*/
-			position: absolute;
-			background-color: $primary-dark;
-			color: $primary-white;
-		}
-		& li {
-			padding-left: 50px; 
-			@mixin atLarge {
-				padding-left: 20px; 
+			&--active {
+				background-color: $primary-white;
+				color: $primary-dark;
 			}
 		}
-		&--expanded {
-			display: block;
-		}
-	}
 
-	&__menu-icon {
-		width: 20px;
-		height: 19px;
-		position: absolute;
-		z-index: 10;
-		top: 20px;
-		right: 30px;
-
-		@mixin atLarge {
-			display: none;
+		.fa-caret-down {
+			@mixin atLarge {
+				margin-left: 5px; 
+			}
 		}
 
-		&::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
+		&__content {
+			height: 0;
+			transition-property: transform, background-color;
+			transition: 0.3s ease-in-out;
+			transform: scaleY(0);
+			transform-origin: top;
+
+			@mixin atLarge {
+				/*margin-top: 6px;*/
+				position: absolute;
+				color: $primary-white;
+			}
+			& li {
+				background-color: $primary-dark;
+				padding-left: 50px; 
+				@mixin atLarge {
+					padding-left: 20px; 
+				}
+			}
+			&--expanded {
+				height: 100%;
+				transform: scaleY(1);
+			}
+		}
+
+		&__menu-icon {
 			width: 20px;
-			height: 3px;
-			background-color: $secondary-dark;
-			transform-origin: 0 0;
-			transition: transform .3s ease-out;
-		}
-
-		&__middle {
+			height: 19px;
 			position: absolute;
-			top: 8px;
-			left: 0;
-			width: 20px;
-			height: 3px;
-			background-color: $secondary-dark;
-			transform-origin: 0 50%;
-			transition: all .3s ease-out;
+			z-index: 10;
+			top: 20px;
+			right: 30px;
+			cursor: pointer;
+
+			@mixin atLarge {
+				display: none;
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 3px;
+				background-color: $secondary-dark;
+				transform-origin: 0 0;
+				transition: transform .3s ease-out;
+			}
+
+			&__middle {
+				position: absolute;
+				top: 8px;
+				left: 0;
+				width: 20px;
+				height: 3px;
+				background-color: $secondary-dark;
+				transform-origin: 0 50%;
+				transition: all .3s ease-out;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 20px;
+				height: 3px;
+				background-color: $secondary-dark;
+				transform-origin: 0 100%;
+				transition: transform .3s ease-out;
+			}
 		}
 
-		&::after {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 20px;
-			height: 3px;
-			background-color: $secondary-dark;
-			transform-origin: 0 100%;
-			transition: transform .3s ease-out;
+		&__menu-icon--close-x {
+			&:before {
+				transform: rotate(45deg) scaleX(1.25);
+			}
+
+			.navbar__menu-icon__middle {
+				opacity: 0;
+				transform: scaleX(0);
+			}
+
+			&:after {
+				transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+			}
 		}
 
+		&__last-link {
+			@mixin atLarge {
+				display: none;
+			}
+		}
 	}
-
-	&__last-link {
-		@mixin atLarge {
-			display: none;
-		}
-	}
-
-	&__menu-icon--close-x {
-		&::before {
-			transform: rotate(45deg) scaleX(1.25);
-		}
-
-		.navbar__menu-icon__middle {
-			opacity: 0;
-			transform: scaleX(0);
-		}
-
-		&::after {
-			transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-		}
-	}
-
-}
-
-@keyframes growDown {
-	0% {
-		transform: scaleY(0)
-	}
-	100% {
-		transform: scaleY(1)
-	}
-}
