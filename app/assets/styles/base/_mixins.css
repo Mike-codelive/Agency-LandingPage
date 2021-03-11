@@ -1,29 +1,35 @@
 @define-mixin atSmall {
-  @media (min-width: 530px) {
+  @media screen and (min-width: 530px) {
     @mixin-content;
   }
 }
 
 @define-mixin atMedium {
-  @media (min-width: 800px) {
+  @media screen and (min-width: 800px) {
     @mixin-content;
   }
 }
 
 @define-mixin atLarge {
-  @media (min-width: 1010px) {
+  @media screen and (min-width: 1010px) {
     @mixin-content;
   }
 }
 
 @define-mixin minNavWidth {
-  @media (min-width: 1070px) {
+  @media screen and (min-width: 1070px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin upToLarge {
+  @media screen and (max-width: 1010px) {
     @mixin-content;
   }
 }
 
 @define-mixin maxNavWidth {
-  @media (max-width: 1070px) {
+  @media screen and (max-width: 1070px) {
     @mixin-content;
   }
 }
@@ -42,7 +48,7 @@ $breakpoint-medium: '720px';
 $breakpoint-large: '1080px';
 
 
-mixin mediaQuery($query) {
+/*mixin mediaQuery($query) {
   $queries: (
     small-only: '(max-width: #{$breakpoint-small})',
     medium-only: '(min-width: #{$breakpoint-small}) and (max-width: #{$breakpoint-medium})',
@@ -52,21 +58,20 @@ mixin mediaQuery($query) {
     );
 
   @if map-has-key($queries, $query) {
-    // Get the query value from the map.
+
     $query-value: map-get($queries, $query);
 
-    // Write the media query.
     @media #{$query-value} {
       @content;
     }
     } @else {
-      // Log a warning if the media query doesn't exist in the map.
+
       @warn 'Invalid media query: #{$query}.';
-    }
-  }
+      }
+      }*/
 
 
-  /*examples*/
+      /*examples*/
  /* @include mediaQuery(small-only) {
   font-size: $text-small;
 }

@@ -37,12 +37,15 @@
 		margin-top: 13px;
 		background-color: $primary-dark;
 		color: $primary-white;
-		transition: 0.3s ease-in-out;
-		transition-property: transform, background-color;
 		transform: scaleY(0);
-		transform-origin: top;
 		cursor: pointer;
 		height: 0;
+		/* for links to overflow the page and scroll*/
+		@mixin upToLarge {
+			max-height: calc(100vh - 60px);
+			overflow-y: auto !important;
+		}
+		/*transition: none;*/
 
 		@mixin atLarge {
 			display: flex;
@@ -57,6 +60,9 @@
 
 		&--is-visible {
 			/*z-index: 1;*/
+			transform-origin: top;
+			transition: 0.3s ease-in-out;
+			transition-property: height, transform, background-color;
 			transform: scaleY(1);
 			height: 100%;
 		}
@@ -95,7 +101,7 @@
 			left: 10px;
 			background-color: $dashed-Blue;
 			visibility: hidden;
-			transition: all 0.3s ease-in-out;
+			transition: width 0.3s ease-in-out;
 		}
 
 		&:hover:before {
@@ -114,6 +120,11 @@
 		}
 
 		.fa-caret-down {
+			transform: rotate(270deg);
+			transition: transform 0.3s ease-in-out;
+			&--active {
+				transform: rotate(360deg);
+			}
 			@mixin atLarge {
 				margin-left: 5px; 
 			}
@@ -177,7 +188,7 @@
 				height: 3px;
 				background-color: $secondary-dark;
 				transform-origin: 0 50%;
-				transition: all .3s ease-out;
+				transition: transform .3s ease-out;
 			}
 
 			&::after {
