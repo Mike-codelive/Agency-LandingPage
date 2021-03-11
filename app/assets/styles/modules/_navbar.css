@@ -80,6 +80,9 @@
 	}
 
 	&__sub {
+		@mixin atLarge {
+			margin-right: 10px;
+		}
 		&:hover .navbar__content {
 			@mixin atLarge {
 				height: 100%;

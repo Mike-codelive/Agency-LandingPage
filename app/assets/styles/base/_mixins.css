@@ -16,12 +16,6 @@
   }
 }
 
-@define-mixin minNavWidth {
-  @media screen and (min-width: 1070px) {
-    @mixin-content;
-  }
-}
-
 @define-mixin upToLarge {
   @media screen and (max-width: 1010px) {
     @mixin-content;
