@@ -56,3 +56,8 @@ a {
 	max-width: 1139px;
 	margin: 0 auto;	
 }
+
+.resize-animation-stopper * {
+	animation: none !important;
+	transition: none !important;
+}
