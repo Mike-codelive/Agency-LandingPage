@@ -50,6 +50,10 @@ a {
 .noscroll {
 	height: 100%;
 	overflow: hidden;
+	@supports (-webkit-overflow-scrolling: touch) {
+		/*CSS specific to iOS devices only  */
+		position: fixed;
+	}
 }
 
 .max-width-nav-center {
