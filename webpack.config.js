@@ -57,7 +57,6 @@ if (currentTask == 'dev') {
       server._watch('./app/**/*.html')
     },
     contentBase: path.join(__dirname, 'app'),
-    open: true,
     hot: true,
     inline: true,
     port: 3000,

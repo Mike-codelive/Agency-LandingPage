@@ -54,5 +54,6 @@
 	&__card-text {
 		font-weight: 900;
 		line-height: 1.2em;
+		letter-spacing: -1px;
 	}
 }
