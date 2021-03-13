@@ -27,7 +27,7 @@
 
 	&__card {
 		position: relative;
-		flex: 1 0 15rem;
+		flex: 1 0 300px;
 		display: flex;
 		height: 480px;
 		overflow: hidden;
