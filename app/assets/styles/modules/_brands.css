@@ -2,75 +2,22 @@
 	
 	background-color: $primary-grey;
 
-
 	.swiper-brands {
 		height: 165px;
-		width: 80%;
-/*		display: flex;
-align-items: center;*/
-/*overflow: hidden;*/
-}
+		position: relative;
+	}
 
-.swiper-wrapper {
-/*	padding: 0 13rem;
-width: 5rem;*/
-}
+	&__title {
+		text-align: center;
+		padding-top: 2.5rem;
+		padding-bottom: 2rem;
+		margin: 0;
+	}
 
-.button-brand-prev {
-	margin-left: -2rem;
-	z-index: 999999999999999;
-}
-
-&__content {
-	height: 320px;
-}
-
-&__title {
-	text-align: center;
-	padding-top: 2rem;
-}
-
-&__img {
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 213px;
-
-	&-1 {
-		background-image: url(../assets/images/google-logo.svg);
+	&__img {
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 100%;
+		padding: 0 3rem;
 	}
-	&-2 {
-		background-image: url(../assets/images/groupon-logo.svg);
-	}
-	&-3 {
-		background-image: url(../assets/images/kapsch-logo.svg);
-	}
-	&-4 {
-		background-image: url(../assets/images/netgear-logo.svg);
-	}
-	&-5 {
-		background-image: url(../assets/images/rolls-royce-logo.svg);
-	}
-	&-6 {
-		background-image: url(../assets/images/salesforce-logo.svg);
-	}
-	&-7 {
-		background-image: url(../assets/images/siriusxm-logo.svg);
-	}
-	&-8 {
-		background-image: url(../assets/images/Thomson-reuters.svg);
-	}
-	&-9 {
-		background-image: url(../assets/images/turner-logo.svg);
-	}
-	&-10 {
-		background-image: url(../assets/images/urban-logo.svg);
-	}
-	&-11 {
-		background-image: url(../assets/images/ViacomCBS-logo.svg);
-	}
-	&-12 {
-		background-image: url(../assets/images/whirlpool-logo.svg);
-	}
-}
 }

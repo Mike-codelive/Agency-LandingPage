@@ -1,3 +1,9 @@
+@font-face {
+	font-family: Orkney Light;
+	src: url("../assets/fonts/orkney-light.otf") format("opentype");
+}
+
+
 .navbar {
 
 	font-family: "Lato", Lato, Sans-serif;
@@ -55,5 +61,13 @@
 		font-weight: 900;
 		line-height: 1.2em;
 		letter-spacing: -1px;
+	}
+}
+
+.brands {
+	&__title {
+		font-size: 1.5rem;
+		font-family: "Orkney Light", Lato, Sans-serif;
+		font-weight: 700;
 	}
 }
