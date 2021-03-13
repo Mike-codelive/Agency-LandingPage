@@ -10,17 +10,18 @@ $blue-btn: #0496ff;
 $navy-Blue: #0272B1;
 $light-Purple: #1F2041;
 $yellow: #F6CC00;
+$light-grey: #F1F1F1;
 
 
 
 $primary-dark: $black-Nav;
-$secondary-dark: $black-Nav;
 $main-Blue: $blue-btn;
 $dashed-Blue: $navy-Blue;
 $main-Hero: $light-Purple;
 $secondary-Btn: $yellow;
 $absent-color: transparent;
 $primary-white: #FFFFFF;
+$primary-grey: $light-grey;
 
 
 

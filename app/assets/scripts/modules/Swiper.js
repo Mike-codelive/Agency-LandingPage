@@ -1,29 +1,17 @@
-import Swiper from 'swiper/bundle';
+import Swiper, { Navigation, Pagination, Autoplay, EffectFade  } from 'swiper/core';
+
+// Install modules
+Swiper.use([Navigation, Pagination, Autoplay, EffectFade ]);
+
+// import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
 
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  grabCursor: true,
-  autoplay: {
-  	delay: 3500,
-  	disableOnInteraction: false,
-  },
-  coverflowEffect: {
-    depth: 0,
-    slideShadows: false,
-  },
-  scrollbar: {
-  	el: '.swiper-scrollbar',
-  	draggable: false,
-  },
-  effect: 'fade',
-  fadeEffect: {
-  	crossFade: true
-  }
-});
+class BuildSwiper {
+	constructor(swiperName, ObjOptions) {
+		this.swiper = new Swiper(swiperName, ObjOptions);
+	}
+}
 
 
-export default swiper
+export default BuildSwiper
