@@ -1,6 +1,6 @@
 import '../styles/styles.css'
 import 'lazysizes'
-import {heroSwiper, brandSwiper} from './modules/Swiper';
+import { heroSwiper, brandSwiper } from './modules/Swiper';
 import MobileMenu from './modules/MobileMenu'
 // import RevealOnScroll from './modules/RevealOnScroll'
 // import StickyHeader from './modules/StickyHeader'
@@ -32,5 +32,5 @@ new MobileMenu();
 // })
 
 if (module.hot) {
-  module.hot.accept()
+	module.hot.accept()
 }

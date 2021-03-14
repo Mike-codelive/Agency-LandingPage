@@ -1,7 +1,11 @@
 /* Fonts
 -------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@font-face {
+	font-family: Orkney Light;
+	src: url("../assets/fonts/orkney-light.otf") format("opentype");
+}
 
 /* Color Variables
 -------------------------------------------------------------- */
@@ -11,6 +15,8 @@ $navy-Blue: #0272B1;
 $light-Purple: #1F2041;
 $yellow: #F6CC00;
 $light-grey: #F1F1F1;
+$aqua: #3cbfbd;
+$purple: #7759a6;
 
 
 
@@ -22,6 +28,8 @@ $secondary-Btn: $yellow;
 $absent-color: transparent;
 $primary-white: #FFFFFF;
 $primary-grey: $light-grey;
+$primary-Aqua: $aqua;
+$primary-Purple: $purple;
 
 
 

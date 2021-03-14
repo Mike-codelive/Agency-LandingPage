@@ -10,6 +10,12 @@
   }
 }
 
+@define-mixin uoToMedium {
+  @media screen and (max-width: 750px) {
+    @mixin-content;
+  }
+}
+
 @define-mixin atLarge {
   @media screen and (min-width: 1010px) {
     @mixin-content;

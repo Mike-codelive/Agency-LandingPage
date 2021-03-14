@@ -28,6 +28,16 @@
     }
   }
 
+  &--white {
+    background-color: $primary-white;
+    color: $main-Blue;
+    border: solid $main-Blue 3px;
+    &:hover {
+      background-color: $main-Blue;
+      color: $primary-white;
+    }
+  }
+
   &--navbar {
     padding: 10px;
     margin-right: 5px;
@@ -43,6 +53,10 @@
     align-self: center;
     margin-top: 3rem;
     margin-bottom: 4rem;
+    padding: 12px 24px;
+  }
+
+  &--partner {
     padding: 12px 24px;
   }
 }
