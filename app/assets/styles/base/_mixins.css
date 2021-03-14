@@ -10,7 +10,7 @@
   }
 }
 
-@define-mixin uoToMedium {
+@define-mixin upToMedium {
   @media screen and (max-width: 750px) {
     @mixin-content;
   }
@@ -30,6 +30,12 @@
 
 @define-mixin maxNavWidth {
   @media screen and (max-width: 1070px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin heightMovile {
+  @media screen and (max-height: 640px) and (orientation: landscape) {
     @mixin-content;
   }
 }

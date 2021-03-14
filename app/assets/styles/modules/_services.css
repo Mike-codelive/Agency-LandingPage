@@ -5,6 +5,7 @@
 	flex-direction: column;
 	margin-top: 3rem;
 	padding: 0 15px;
+	margin-bottom: 4rem;
 
 	&__text-content {
 		text-align: center;
@@ -19,6 +20,7 @@
 	&__cards {
 		display: flex;
 		flex-wrap: wrap;
+		margin-bottom: 3rem;
 		/*flex-direction: column;*/
 /*		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));

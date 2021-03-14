@@ -22,7 +22,7 @@
 		position: relative;
 		height: 340px;
 		margin: 1rem;
-		@mixin uoToMedium {
+		@mixin upToMedium {
 			flex-basis: 50%
 		}
 

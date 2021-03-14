@@ -30,10 +30,26 @@
 
 .hero {
 
-	font-family: "Lato", Lato, Sans-serif;
+	&__info {
+		font-family: "Lato", Lato, Sans-serif;
+		color: $primary-white;
+	}
 
 	&__title {
-		font-size: 2.8rem;
+		font-size: 3rem;
+		margin: 0 0 30px 0;
+		@mixin heightMovile {
+			font-size: 1.8rem;
+		}
+	}
+
+	&__text {
+		line-height: 2rem;
+		@mixin heightMovile {
+			line-height: 1rem;
+			font-size: 1rem;
+			margin: 0;
+		}
 	}
 }
 
