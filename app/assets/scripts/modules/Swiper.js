@@ -24,7 +24,7 @@ export let heroSwiper = new Swiper('.swiper-hero', {
 export let brandSwiper = new Swiper('.swiper-brands', {
   // Optional parameters
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 50,
   direction: 'horizontal',
   loop: true,
   grabCursor: true,
@@ -33,21 +33,21 @@ export let brandSwiper = new Swiper('.swiper-brands', {
   	nextEl: '.button-brand-next', 
   },
   autoplay: {
-  	delay: 1500,
+  	delay: 2000,
   	disableOnInteraction: false,
   },
   breakpoints: {
   	640: {
   		slidesPerView: 2,
-  		spaceBetween: 0,
+  		spaceBetween: 50,
   	},
   	768: {
   		slidesPerView: 4,
-  		spaceBetween: 0,
+  		spaceBetween: 50,
   	},
   	924: {
-  		slidesPerView: 4,
-  		spaceBetween: 0,
+  		slidesPerView: 5,
+  		spaceBetween: 50,
   	},
   }
 
