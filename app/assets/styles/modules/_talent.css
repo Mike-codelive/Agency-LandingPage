@@ -1,0 +1,50 @@
+.talent {
+
+	background-color: $primary-grey;
+
+	&__content {
+		padding: 80px 0;
+	}
+
+	&__boxes {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	&__box {
+		/*flex: 1 0 50 %;*/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 10px;
+		padding: 30px;
+		width: 204px;
+		height: 253px;
+		background-color: $primary-white;
+		border-top: 3px solid $dashed-Blue;
+		box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 15%);
+	}
+
+	&__icon {
+		text-align: center;
+		padding: 1rem;
+		max-width: min-content;
+		border-radius: 100%;
+		background-color: $dashed-Blue;
+		cursor: pointer;
+		transition: transform .3s ease-in-out;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+
+		& > * {
+			font-size: 50px;
+			color: $absent-color;
+			stroke: $primary-white;
+			stroke-width: 10;
+		}
+	}
+
+}

@@ -85,6 +85,18 @@
 	}
 }
 
+.talent {
+	&__text-content {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	&__box-text {
+		text-align: center;
+		cursor: pointer;
+	}
+}
+
 .main__title {
 	font-size: 2rem;
 	font-family: "Orkney Light", Lato, Sans-serif;
@@ -97,4 +109,7 @@
 	font-size: 1rem;
 	line-height: 1.7;
 	font-weight: 400;
+	@mixin atMedium {
+		padding: 0 6.5rem;
+	}
 }

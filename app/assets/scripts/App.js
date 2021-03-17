@@ -6,6 +6,10 @@ import MobileMenu from './modules/MobileMenu'
 // import StickyHeader from './modules/StickyHeader'
 import NavLinkReveal from './modules/NavLinkReveal'
 import AnimationPrevent from './modules/AnimationPrevent'
+import '@fortawesome/fontawesome-free/js/fontawesome'
+import '@fortawesome/fontawesome-free/js/solid'
+// import '@fortawesome/fontawesome-free/js/regular'
+// import '@fortawesome/fontawesome-free/js/brands'
 
 
 // new StickyHeader();
