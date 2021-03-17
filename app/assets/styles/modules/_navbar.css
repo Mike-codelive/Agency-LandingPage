@@ -73,7 +73,7 @@
 				padding: 22px 16px;
 			}
 			&:hover {
-				transition: 0.3s ease-in-out;
+				transition: 0.2s ease-in-out;
 				transition-property: background-color, color;
 				background-color: $primary-white;
 				color: $primary-dark;
@@ -84,11 +84,16 @@
 	&__sub {
 		@mixin atLarge {
 			margin-right: 10px;
-		}
-		&:hover .navbar__content {
-			@mixin atLarge {
+			&:hover .navbar__content {
 				height: 100%;
 				transform: scaleY(1);
+			}
+			&:hover .navbar__dropcontent:before {
+				visibility: visible;
+				width: 80%;
+			}
+			&:hover .fa-caret-down {
+				transform: rotate(360deg);
 			}
 		}
 	}
@@ -109,126 +114,127 @@
 			visibility: hidden;
 			transition: width 0.3s ease-in-out;
 		}
+		/*to produce progres bar on links mobile*/
 
-		&:hover:before {
+		/*&:hover:before {
 			visibility: visible;
 			width: 80%;
-		}
+			}*/
 
-		&:hover .fa-caret-down {
-			transition: transform 0.3s ease-in-out;
-			transform: rotate(360deg);
-		}
+			&:hover .fa-caret-down {
+				/*transition: transform 0.3s ease-in-out;*/
+				transform: rotate(360deg);
+			}
 
-		&--active {
-			background-color: $primary-white;
-			color: $primary-dark;
-		}
-	}
-
-	.fa-caret-down {
-		transform: rotate(270deg);
-		transition: transform 0.3s ease-in-out;
-		&--active {
-			transform: rotate(360deg);
-		}
-		@mixin atLarge {
-			margin-left: 10px; 
-		}
-	}
-
-	&__content {
-		height: 0;
-		transition-property: transform, background-color;
-		transition: 0.3s ease-in-out;
-		transform: scaleY(0);
-		transform-origin: top;
-
-		@mixin atLarge {
-			/*margin-top: 6px;*/
-			position: absolute;
-			color: $primary-white;
-		}
-		& li {
-			background-color: $primary-dark;
-			padding-left: 50px; 
-			@mixin atLarge {
-				padding-left: 20px; 
+			&--active {
+				background-color: $primary-white;
+				color: $primary-dark;
 			}
 		}
-		&--expanded {
-			height: 100%;
-			transform: scaleY(1);
-		}
-	}
 
-	&__menu-icon {
-		width: 20px;
-		height: 19px;
-		position: absolute;
-		z-index: 10;
-		top: 20px;
-		right: 30px;
-		cursor: pointer;
-
-		@mixin atLarge {
-			display: none;
+		.fa-caret-down {
+			transform: rotate(270deg);
+			transition: transform 0.3s ease-in-out;
+			&--active {
+				transform: rotate(360deg);
+			}
+			@mixin atLarge {
+				margin-left: 10px; 
+			}
 		}
 
-		&::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
+		&__content {
+			height: 0;
+			transition-property: transform, background-color;
+			transition: 0.3s ease-in-out;
+			transform: scaleY(0);
+			transform-origin: top;
+
+			@mixin atLarge {
+				/*margin-top: 6px;*/
+				position: absolute;
+				color: $primary-white;
+			}
+			& li {
+				background-color: $primary-dark;
+				padding-left: 50px; 
+				@mixin atLarge {
+					padding-left: 20px; 
+				}
+			}
+			&--expanded {
+				height: 100%;
+				transform: scaleY(1);
+			}
+		}
+
+		&__menu-icon {
 			width: 20px;
-			height: 3px;
-			background-color: $primary-dark;
-			transform-origin: 0 0;
-			transition: transform .3s ease-out;
-		}
-
-		&__middle {
+			height: 19px;
 			position: absolute;
-			top: 8px;
-			left: 0;
-			width: 20px;
-			height: 3px;
-			background-color: $primary-dark;
-			transform-origin: 0 50%;
-			transition: transform .3s ease-out;
+			z-index: 10;
+			top: 20px;
+			right: 30px;
+			cursor: pointer;
+
+			@mixin atLarge {
+				display: none;
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 3px;
+				background-color: $primary-dark;
+				transform-origin: 0 0;
+				transition: transform .3s ease-out;
+			}
+
+			&__middle {
+				position: absolute;
+				top: 8px;
+				left: 0;
+				width: 20px;
+				height: 3px;
+				background-color: $primary-dark;
+				transform-origin: 0 50%;
+				transition: transform .3s ease-out;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 20px;
+				height: 3px;
+				background-color: $primary-dark;
+				transform-origin: 0 100%;
+				transition: transform .3s ease-out;
+			}
 		}
 
-		&::after {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 20px;
-			height: 3px;
-			background-color: $primary-dark;
-			transform-origin: 0 100%;
-			transition: transform .3s ease-out;
+		&__menu-icon--close-x {
+			&:before {
+				transform: rotate(45deg) scaleX(1.25);
+			}
+
+			.navbar__menu-icon__middle {
+				opacity: 0;
+				transform: scaleX(0);
+			}
+
+			&:after {
+				transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+			}
+		}
+
+		&__last-link {
+			@mixin atLarge {
+				display: none;
+			}
 		}
 	}
-
-	&__menu-icon--close-x {
-		&:before {
-			transform: rotate(45deg) scaleX(1.25);
-		}
-
-		.navbar__menu-icon__middle {
-			opacity: 0;
-			transform: scaleX(0);
-		}
-
-		&:after {
-			transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-		}
-	}
-
-	&__last-link {
-		@mixin atLarge {
-			display: none;
-		}
-	}
-}
