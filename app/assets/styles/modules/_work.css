@@ -1,0 +1,30 @@
+.work {
+
+	padding: 3rem 0;
+
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-top: 40px;
+	}
+
+	&__card {
+		cursor: pointer;
+		width: 353px;
+		margin: 10px;
+		&-img {
+			overflow: hidden;
+			height: 450px;
+			& img {
+				transition: transform 0.3s ease-in-out;
+				object-fit: cover;
+				height: 100%
+			}
+		}
+		&:hover img {
+			transform: scale(1.2);
+		}
+	}
+
+}
