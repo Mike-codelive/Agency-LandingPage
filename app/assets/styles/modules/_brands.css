@@ -22,14 +22,6 @@
 		padding: 0 40px;
 	}
 
-
-	&__title {
-		text-align: center;
-		padding-top: 2.5rem;
-		padding-bottom: 2rem;
-		margin: 0;
-	}
-
 	&__img {
 		background-position: center;
 		background-repeat: no-repeat;

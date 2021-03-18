@@ -52,3 +52,34 @@ export let brandSwiper = new Swiper('.swiper-brands', {
   }
 
 })
+
+export let experiencesSwiper = new Swiper('.swiper-experiences', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  grabCursor: true,
+  // autoplay: {
+  //   delay: 3500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: '.experiences-pagination',
+    type: 'bullets',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '"></span>';
+    },
+  }
+})
+
+
+
+let els = document.querySelectorAll('*')
+
+
+els.forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    e.stopPropagation();
+  })
+})

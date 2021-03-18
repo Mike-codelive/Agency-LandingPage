@@ -70,14 +70,6 @@
 	}
 }
 
-.brands {
-	&__title {
-		font-size: 1.7rem;
-		font-family: "Orkney Light", Lato, Sans-serif;
-		font-weight: 700;
-	}
-}
-
 .partner {
 	&__card {
 		font-family: "Lato", Lato, Sans-serif;
@@ -110,6 +102,24 @@
 	}
 }
 
+.experiences {
+	font-family: "Lato", Lato, Sans-serif;
+
+	&__testimonial {
+		line-height: 1.7em;
+		font-size: 16px;
+	}
+	&__name {
+		color: $dashed-Blue;
+		font-size: 20px;
+		margin: 0 0 7px 0;
+	}
+	&__title {
+		font-size: 16px;
+		margin: 0 0 8px 0;
+	}
+}
+
 .main__title {
 	text-align: center;
 	font-size: 2rem;
@@ -126,4 +136,14 @@
 	@mixin paddingSubtitle {
 		padding: 0 6.5rem;
 	}
+}
+
+.secondary__subtitle {
+	font-size: 1.7rem;
+	font-family: "Orkney Light", Lato, Sans-serif;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 2.5rem;
+	padding-bottom: 2rem;
+	margin: 0;
 }

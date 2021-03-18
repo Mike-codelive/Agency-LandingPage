@@ -14,9 +14,11 @@ $blue-btn: #0496ff;
 $navy-Blue: #0272B1;
 $light-Purple: #1F2041;
 $yellow: #F6CC00;
-$light-grey: #F1F1F1;
+$silver: #F1F1F1;
+$light-Grey: #A2A2A2;
 $aqua: #3cbfbd;
 $purple: #7759a6;
+$medium-Blue: #0496FF;
 
 
 
@@ -25,9 +27,11 @@ $main-Blue: $blue-btn;
 $dashed-Blue: $navy-Blue;
 $main-Hero: $light-Purple;
 $secondary-Btn: $yellow;
+$secondary-Grey: $light-Grey;
+$secondary-Blue: $medium-Blue;
 $absent-color: transparent;
 $primary-white: #FFFFFF;
-$primary-grey: $light-grey;
+$primary-grey: $silver;
 $primary-Aqua: $aqua;
 $primary-Purple: $purple;
 
