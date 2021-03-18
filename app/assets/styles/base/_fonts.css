@@ -91,6 +91,7 @@
 	}
 
 	&__box-text {
+		font-family: "Lato", Lato, Sans-serif;
 		text-align: center;
 		cursor: pointer;
 	}
