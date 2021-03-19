@@ -1,0 +1,25 @@
+.secondary-swiper {
+
+	.swiper-button-prev:after {
+		content: "";
+	}
+	.swiper-button-next:after {
+		content: "";
+	}
+
+	&-button {
+		transform: scale(0.4);
+		color: $secondary-Grey !important;
+		& > * {
+			font-size: 5rem;
+			font-weight: 1;
+			stroke-width: 28px;
+			stroke: $primary-white;
+		}
+	}
+
+	&__content {
+		position: relative;
+		padding: 0 40px;
+	}
+}

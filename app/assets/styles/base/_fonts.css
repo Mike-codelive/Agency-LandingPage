@@ -1,6 +1,6 @@
 .navbar {
 
-	font-family: "Lato", Lato, Sans-serif;
+	font-family: $font-secondary;
 	font-weight: 600;
 	
 	@mixin atLarge {
@@ -16,7 +16,7 @@
 
 .btn {
 
-	font-family: 'Roboto', sans-serif;
+	font-family: $font-primary;
 	font-size: 15px;
 
 	&--yellow {
@@ -31,7 +31,7 @@
 .hero {
 
 	&__info {
-		font-family: "Lato", Lato, Sans-serif;
+		font-family: $font-secondary;
 		color: $primary-white;
 	}
 
@@ -55,10 +55,10 @@
 
 .services {
 
-	font-family: "Lato", Lato, Sans-serif;
+	font-family: $font-secondary;
 
 	&__title {
-		font-family: "Orkney Light", Lato, Sans-serif;
+		font-family: $font-tertiary;
 		color: $dashed-Blue;
 		font-weight: 700;
 	}
@@ -66,13 +66,12 @@
 	&__card-text {
 		font-weight: 900;
 		line-height: 1.2em;
-		letter-spacing: -1px;
 	}
 }
 
 .partner {
 	&__card {
-		font-family: "Lato", Lato, Sans-serif;
+		font-family: $font-secondary;
 		color: $primary-white;
 	}
 }
@@ -83,7 +82,7 @@
 	}
 
 	&__box-text {
-		font-family: "Lato", Lato, Sans-serif;
+		font-family: $font-secondary;
 		text-align: center;
 		cursor: pointer;
 	}
@@ -91,7 +90,7 @@
 
 .work {
 	&__text-content {
-		font-family: "Lato", Lato, Sans-serif;
+		font-family: $font-secondary;
 		padding: 20px;
 	}
 
@@ -103,7 +102,7 @@
 }
 
 .experiences {
-	font-family: "Lato", Lato, Sans-serif;
+	font-family: $font-secondary;
 
 	&__testimonial {
 		line-height: 1.7em;
@@ -120,16 +119,23 @@
 	}
 }
 
+.awards {
+	&__text {
+		text-align: center;
+		font-family: $font-secondary;
+	}
+}
+
 .main__title {
 	text-align: center;
 	font-size: 2rem;
-	font-family: "Orkney Light", Lato, Sans-serif;
+	font-family: $font-tertiary;
 	font-weight: 700;
 	color: $dashed-Blue;
 }
 
 .main__subtitle {
-	font-family: "Lato", Lato, Sans-serif;
+	font-family: $font-secondary;
 	font-size: 1rem;
 	line-height: 1.7;
 	font-weight: 400;
@@ -140,7 +146,7 @@
 
 .secondary__subtitle {
 	font-size: 1.7rem;
-	font-family: "Orkney Light", Lato, Sans-serif;
+	font-family: $font-tertiary;
 	font-weight: 700;
 	text-align: center;
 	padding-top: 2.5rem;

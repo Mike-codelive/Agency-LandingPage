@@ -1,25 +1,14 @@
-.brands {
+.clients {
 
 	background-color: $primary-grey;
-
-	.swiper-brands {
-		height: 165px;
-		position: relative;
-	}
-
-	.swiper-button {
-		transform: scale(0.4);
-		color: $primary-dark;
-		font-weight: 900;
-	}
 
 	&__center {
 		padding-bottom: 2.5rem;
 	}
 
-	&__content {
+	&__swiper {
+		height: 165px;
 		position: relative;
-		padding: 0 40px;
 	}
 
 	&__img {

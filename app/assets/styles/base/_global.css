@@ -7,6 +7,10 @@
 	src: url("../assets/fonts/orkney-light.otf") format("opentype");
 }
 
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: "Lato", Lato, Sans-serif;
+$font-tertiary: "Orkney Light", Lato, Sans-serif;
+
 /* Color Variables
 -------------------------------------------------------------- */
 $black-Nav: #1F2041;
@@ -22,7 +26,6 @@ $medium-Blue: #0496FF;
 
 
 
-$primary-dark: $black-Nav;
 $main-Blue: $blue-btn;
 $dashed-Blue: $navy-Blue;
 $main-Hero: $light-Purple;
@@ -30,6 +33,7 @@ $secondary-Btn: $yellow;
 $secondary-Grey: $light-Grey;
 $secondary-Blue: $medium-Blue;
 $absent-color: transparent;
+$primary-dark: $black-Nav;
 $primary-white: #FFFFFF;
 $primary-grey: $silver;
 $primary-Aqua: $aqua;

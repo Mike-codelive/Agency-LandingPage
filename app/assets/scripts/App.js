@@ -1,6 +1,6 @@
 import '../styles/styles.css'
 import 'lazysizes'
-import { heroSwiper, brandSwiper } from './modules/Swiper';
+import './modules/Swiper';
 import MobileMenu from './modules/MobileMenu'
 // import RevealOnScroll from './modules/RevealOnScroll'
 // import StickyHeader from './modules/StickyHeader'
