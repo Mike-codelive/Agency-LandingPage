@@ -20,10 +20,12 @@ $light-Purple: #1F2041;
 $yellow: #F6CC00;
 $silver: #F1F1F1;
 $light-Grey: #A2A2A2;
+$mid-Grey: #dedee5;
+$radio-Grey: #DDDDDD;
 $aqua: #3cbfbd;
 $purple: #7759a6;
 $medium-Blue: #0496FF;
-
+$red: #790000;
 
 
 $main-Blue: $blue-btn;
@@ -38,8 +40,9 @@ $primary-white: #FFFFFF;
 $primary-grey: $silver;
 $primary-Aqua: $aqua;
 $primary-Purple: $purple;
-
-
+$primary-Red: $red;
+$tertiary-Grey: $mid-Grey;
+$fourth-Grey: $radio-Grey;
 
 /* Global Styles
 -------------------------------------------------------------- */

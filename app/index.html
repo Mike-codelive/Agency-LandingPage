@@ -566,25 +566,33 @@
 
 
   <section class="contact">
-    <div class="max-width-nav-center contact__center-form">
+    <div class="max-width-nav-center contact__position-form">
       <div class="form">
-        <h1 class="main__title">Get In Touch</h1>
-        <h3 class="main__subtitle">Jump-start your Business with the
-          <strong>Top 1% of IT Talent.</strong>
-        </h3>
-        <label for="Name">Your Name *</label>
-        <input id="Nmae" type="name">
-        <label for="Email">Your Work Email *</label>
-        <input form="Email" type="email">
-        <label for="Interest">Your Interest *</label>
-        <input type="radio" id="choice_1">
-        <label for="choice_1">BairesDev services</label>
-        <input type="radio" id="choice_2">
-        <label for="choice_2">Join your team</label>
+        <div>        
+          <h1 class="main__title">Get In Touch</h1>
+          <h3 class="main__subtitle">Jump-start your Business with the
+            <strong>Top 1% of IT Talent.</strong>
+          </h3>
+        </div>
+        <label class="form__text" for="Name">Your Name <span class="form__field-required">*</span></label>
+        <input class="form__input" id="Name" type="name">
+        <label class="form__text" for="Email">Your Work Email <span class="form__field-required">*</span></label>
+        <input class="form__input"  form="Email" type="email">
+        <label class="form__text" for="Interest">Your Interest <span class="form__field-required">*</span></label>
+        <div class="form__radio-buttons">        
+          <div>
+            <input type="radio" name="choice" id="choice_1" checked>
+            <label for="choice_1">BairesDev services</label>
+          </div>
+          <div>
+            <input type="radio" name="choice" id="choice_2">
+            <label for="choice_2">Join your team</label>
+          </div>
+        </div>
+        <a class="btn btn--yellow btn--form" href="#">Submit</a>
 
-        <a class="btn btn--yellow" href="#">submit</a>
-
-        <p class="form__desc">Need us to sign a non-disclosure agreement first? Please email us at <a href="#">info@bairesdev.com.</a></p>
+        <p class="form__desc">Need us to sign a non-disclosure agreement first? Please email us at <a href="#">info@bairesdev.com.</a>
+        </p>
 
       </div>
     </div>

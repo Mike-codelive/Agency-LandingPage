@@ -126,6 +126,31 @@
 	}
 }
 
+.form {
+	font-family: $font-secondary;
+
+	&__text {
+		padding: 2rem 0;
+		font-weight: 700;
+	}
+
+	&__field-required {
+		color: $primary-Red;
+	}
+
+	&__input {
+		font-family: $font-tertiary;
+	}
+
+	input[type="radio"]:checked + label {
+		font-weight: 700;
+	}
+
+	&__desc {
+		font-size: 12px
+	}
+}
+
 .main__title {
 	text-align: center;
 	font-size: 2rem;
