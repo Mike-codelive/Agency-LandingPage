@@ -7,16 +7,6 @@
 	padding: 0 15px;
 	margin-bottom: 4rem;
 
-	&__text-content {
-		text-align: center;
-	}
-
-	&__subtitle {
-		@mixin atLarge {
-			padding: 0px 200px 0px 200px;
-		}
-	}
-
 	&__cards {
 		display: flex;
 		flex-wrap: wrap;

@@ -1,0 +1,7 @@
+.form {
+
+	padding: 2rem 20px 20px;
+	background-color: $primary-white;
+	width: 600px;
+	margin-left: 8rem;
+}

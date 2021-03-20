@@ -136,6 +136,7 @@
 
 .main__subtitle {
 	font-family: $font-secondary;
+	text-align: center;
 	font-size: 1rem;
 	line-height: 1.7;
 	font-weight: 400;
