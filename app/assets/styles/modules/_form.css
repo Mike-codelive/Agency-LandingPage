@@ -37,6 +37,7 @@
 			}
 		}
 		label {
+			display: flex;	
 			&:before {
 				vertical-align: middle;
 				content: "";
