@@ -41,6 +41,16 @@
     }
   }
 
+  &--black {
+    background-color: $primary-dark;
+    color: $primary-white;
+    border: solid $primary-white 1px;
+    &:hover {
+      background-color: $main-Blue;
+      border-color: $main-Blue;
+    }
+  }
+
   &--navbar {
     padding: 10px;
     margin-right: 5px;
@@ -69,5 +79,10 @@
     &:hover {
       color: $primary-dark;
     }
+  }
+
+  &--footer {
+    padding: 12px 24px;
+    margin-bottom: 2rem;
   }
 }
