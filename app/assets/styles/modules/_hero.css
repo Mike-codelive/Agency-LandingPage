@@ -25,21 +25,21 @@
 		&--1 {
 			background-image: linear-gradient(
 				rgba($main-Hero, 0.41), rgba($main-Hero, 0.41)),
-			url(../assets/images/hero-1.webp);
+			url(./assets/images/hero-1.webp);
 			background-size: cover;
 			background-position: center;
 		}
 		&--2 {
 			background-image: linear-gradient(
 				rgba($main-Hero, 0.41), rgba($main-Hero, 0.41)),
-			url(../assets/images/hero-2.webp);
+			url(./assets/images/hero-2.webp);
 			background-size: cover;
 			background-position: center;
 		}
 		&--3 {
 			background-image: linear-gradient(
 				rgba($main-Hero, 0.41), rgba($main-Hero, 0.41)),
-			url(../assets/images/hero-3.webp);
+			url(./assets/images/hero-3.webp);
 			background-size: cover;
 			background-position: center;
 		}

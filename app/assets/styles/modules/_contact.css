@@ -2,7 +2,7 @@
 
 	background-image: linear-gradient(
 		rgba($main-Blue, 0.15), rgba($main-Blue, 0.15)),
-	url(../assets/images/Software-Development.jpg);
+	url(./assets/images/Software-Development.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
