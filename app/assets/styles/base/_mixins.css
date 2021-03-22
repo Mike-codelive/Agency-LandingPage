@@ -46,19 +46,19 @@
   }
 }
 
-@define-mixin clearfix {
+/*@define-mixin clearfix {
   &::after {
     content: "";
     clear: both;
     display: table;
   }
 }
+*/
 
-
-$breakpoint-small: '360px';
+/*$breakpoint-small: '360px';
 $breakpoint-medium: '720px';
 $breakpoint-large: '1080px';
-
+*/
 
 /*mixin mediaQuery($query) {
   $queries: (

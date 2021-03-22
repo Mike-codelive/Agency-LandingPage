@@ -15,8 +15,6 @@ class NavLinkReveal {
 		e.target.nextElementSibling.classList.toggle('navbar__content--expanded');
 		e.target.classList.toggle("navbar__dropcontent--active");
 		e.target.firstElementChild.classList.toggle('fa-caret-down--active');
-		// e.target.nextElementSibling.nextElementSibling.classList.toggle("fa-caret-down--active");
-		console.log(e.target.firstElementChild);
 	}
 
 	toggleContent(e) {

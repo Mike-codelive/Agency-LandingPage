@@ -2,39 +2,19 @@ import '../styles/styles.css'
 import 'lazysizes'
 import './modules/Swiper';
 import MobileMenu from './modules/MobileMenu'
-// import RevealOnScroll from './modules/RevealOnScroll'
-// import StickyHeader from './modules/StickyHeader'
 import NavLinkReveal from './modules/NavLinkReveal'
 import AnimationPrevent from './modules/AnimationPrevent'
+import ScrollButton from './modules/ScrollButton'
 import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
-// import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
-// import '@fortawesome/fontawesome-free/js/all.js'
 
 
-// new StickyHeader();
 new NavLinkReveal();
 new AnimationPrevent();
 new MobileMenu();
-// new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)
-// new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
+new ScrollButton();
 
-
-// let modal
-// document.querySelectorAll(".open-modal").forEach(el => {
-//   el.addEventListener("click", e => {
-//     e.preventDefault()
-//     if (typeof modal == "undefined") {
-//       import(/* webpackChunkName: "modal" */ './modules/Modal').then(x => {
-//         modal = new x.default()
-//         setTimeout(() => modal.openTheModal(), 20)
-//       }).catch(() => console.log("There was a problem."))
-//     } else {
-//       modal.openTheModal()
-//     }
-//   })
-// })
 
 if (module.hot) {
 	module.hot.accept()
