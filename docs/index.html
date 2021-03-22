@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>bairesdev Clone</title>
+  <meta name="keywords" content="code, live agency">
+  <meta name="description" content="Clone of bairesdev.com To practice layout and design">
+
+<link href="styles.9f97a8dad925e6de9c44.css" rel="stylesheet"><link href="styles.48c94ae09fcb783ad696.css" rel="stylesheet"></head>
+<body>
+
+  <nav class="navbar">
+    <script type="text/javascript">
+      document.querySelector('body').style.cssText = "opacity: 0;";
+      document.querySelector('nav').style.cssText = "display: none;";
+      window.onload = function() {
+        document.querySelector('body').style.cssText = "opacity: 1; transition: opacity 1s ease-in-out;"
+        document.querySelector('nav').style.cssText = "display: unset;";
+      };
+    </script>
+    <div class="max-width-nav-center navbar__center">
+      <img class="navbar__logo lazyload" data-src="./assets/images/logo-blue.svg" alt="Logo">
+      <ul class="navbar__links">
+        <div class="navbar__sub">
+          <li class="navbar__dropcontent">Services <i class="fa fa-caret-down"></i>
+          </li>
+          <ul class="navbar__content">
+            <li>Dedicated Teams</li>
+            <li>Staff Augmentation</li>
+            <li>Software Outsourcing</li>
+            <li>Expertise</li>
+            <li>Staffing Hero</li>
+          </ul>
+        </div>
+
+        <div class="navbar__sub">
+          <li class="navbar__dropcontent">clients <i class="fa fa-caret-down"></i>
+          </li>
+          <ul class="navbar__content">
+            <li>Success Stories</li>
+            <li>Reviews & Testimonials</li>
+          </ul>
+        </div>
+
+        <div class="navbar__sub">
+          <li class="navbar__dropcontent">Our Thoughts <i class="fa fa-caret-down"></i>
+          </li>
+          <ul class="navbar__content">
+            <li>Software Development Insights</li>
+            <li>Technology Insights</li>
+            <li>Industries Insights</li>
+          </ul>
+        </div>
+
+        <div class="navbar__sub">
+          <li class="navbar__dropcontent">About <i class="fa fa-caret-down"></i>
+          </li>
+          <ul class="navbar__content">
+            <li>Our Development Teams</li>
+            <li>Leadership Team</li>
+            <li>How We Hire</li>
+            <li>Diversity & Inclusion</li>
+            <li>Methodologies</li>
+            <li>Certifications</li>
+            <li>Technologies</li>
+            <li>Awards & Recognitions</li>
+            <li>Press</li>
+            <li>Social Responsibility</li>
+            <li>Business Continuity</li>
+          </ul>
+        </div>
+        <div class="navbar__sub">
+          <li class="navbar__dropcontent">Blog</li>
+        </div>
+
+        <div class="navbar__sub">
+          <li class="navbar__dropcontent">Careers <i class="fa fa-caret-down"></i>
+          </li>
+          <ul class="navbar__content">
+            <li>Job Opportunities</li>
+            <li>Referrals Program</li>
+          </ul>
+        </div>
+        <li class="navbar__last-link">Contact Us</li>
+        <a href="#" class="btn btn--blue btn--navbar">Contact Us</a>
+      </ul>
+      <div class="navbar__menu-icon">
+        <div class="navbar__menu-icon__middle"></div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <!-- Slider main container -->
+    <div class="swiper-container swiper-hero">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide lazyload hero__img--1" data-bg="./assets/images/hero-1.webp">
+          <div class="max-width-nav-center hero__center">
+            <div class="hero__info">
+              <h1 class="hero__title">Powered by Technology <br> Driven by Talent</h1>
+              <p class="hero__text">We lead the digital transformation of companies worldwide driven by the <br> 1% IT Talent.</p>
+            </div>
+            <a href="#" class="btn btn--yellow">How can we help you? ></a>
+          </div>
+        </div>
+        <div class="swiper-slide lazyload hero__img--2" data-bg="./assets/images/hero-2.webp">
+          <div class="max-width-nav-center hero__center">
+            <div class="hero__info">
+              <h1 class="hero__title">Find the Right Partner</h1>
+              <p class="hero__text">Looking for a partner you can trust to execute your Product Development.<br> Software Outsourcing or IT Staff Augmentation projects?
+              You've come to the right place.</p>
+            </div>
+            <a href="#" class="btn btn--yellow">Let's connect ></a>
+          </div>
+        </div>
+        <div class="swiper-slide lazyload hero__img--3" data-bg="./assets/images/hero-3.webp">
+          <div class="max-width-nav-center hero__center">
+            <div class="hero__info">
+              <h1 class="hero__title">Near shore Custom Software <br> Outsourcing Solutions</h1>
+              <p class="hero__text">We specialize in solid end-to-end delivery of tailor-made technology solutions for startups, <br> SMBs & Enterprises, designed by the Top 1% Software ENgineering teams.</p>
+            </div>
+            <a href="#" class="btn btn--yellow">Contact us ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services max-width-nav-center">
+    <div>
+      <h1 class="main__title">Our Services</h1>
+      <h4 class="main__subtitle">We are a digital acceleration expert, specialized in solid end-to-end delivery of <br> tailor-made technology solutions bringing innovative, scalable, and competitive results.</h4>
+    </div>
+    <div class="services__cards">
+      <div class="services__card">
+        <img class="services__card-img lazyload" data-src="./assets/images/services-1.webp" alt="sercice-card">
+        <div class="services__card-text">
+          <h2 class="services__card-title">Dedicated Team</h2>
+          <h5 class="services__card-description">An expert autonomous team capable of rapidly and efficiently delivering technology solutions and value.</h5>
+        </div>
+      </div>
+      <div class="services__card">
+        <img class="services__card-img lazyload" data-src="./assets/images/services-2.jpg" alt="sercice-card">
+        <div class="services__card-text">
+          <h2 class="services__card-title">IT Staff Augmentation</h2>
+          <h5 class="services__card-description">The extra talent needed to boost your projects. Top 1% Engineers fully integrated with your team.</h5>
+        </div>
+      </div>
+      <div class="services__card">
+        <img class="services__card-img lazyload" data-src="./assets/images/services-3.webp" alt="sercice-card">
+        <div class="services__card-text">
+          <h2 class="services__card-title">Software Outsourcing</h2>
+          <h5 class="services__card-description">Full-cycle custom software development. You provide the specifications, we deliver the end-to-end solution.</h5>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn btn--blue btn--services">Explore Our Services ></a>
+  </section>
+
+
+  <section class="clients">
+    <div class="max-width-nav-center clients__center">
+      <h1 class="secondary__subtitle">
+        Our Amazing Clients
+      </h1>
+      <div class="secondary-swiper secondary-swiper__content">      
+        <!-- Slider main container -->
+        <div class="swiper-container secondary-swiper-container clients__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/google-logo.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/groupon-logo.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/kapsch-logo.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/netgear-logo.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/rolls-royce-logo.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/salesforce-logo.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/siriusxm-logo.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/Thomson-reuters.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/turner-logo.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/urban-logo.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/ViacomCBS-logo.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/whirlpool-logo.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/LOGO-gennev-.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/consumeraffairs.svg" alt="brand">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img class="clients__img lazyload" data-src="./assets/images/autodesk-logo.svg" alt="brand">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev secondary-swiper-button button-clients-prev"><i class="fas fa-angle-left"></i></div>
+        <div class="swiper-button-next secondary-swiper-button button-clients-next"><i class="fas fa-angle-right"></i></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="partner max-width-nav-center">
+    <h1 class="partner__title main__title">Why Partner With Us</h1>
+    <h3 class="partner__subtitle main__subtitle"><p>We are the fastest growing Software Outsourcing company in Latin America. We employ the <strong>Top 1% IT Talent</strong> in the region to create solid engineering teams that provide end-to-end delivery of Technology Solutions.</p></h3>
+    <div class="partner__cards">
+      <div class="partner__card">
+        <div class="partner__card-side partner__card-side--front">
+          <div class="partner__card-data">
+            <h1 class="partner__card-title">Top 1% IT Talent</h1>
+          </div>
+        </div>
+        <div class="partner__card-side partner__card-side--back">
+          <div class="partner__card-data">
+            <h1 class="partner__card-title">Top 1% IT Talent</h1>
+            <p class="partner__card-info">We thrive in finding the Top 1% IT Talent to fulfill every project's needs.
+            Our team evaluates over 1.2 million applicants every year to find the most talented Software Engineers and we provide them continuous and extensive training.</p>
+          </div>
+        </div>
+      </div>
+      <div class="partner__card">
+        <div class="partner__card-side partner__card-side--front partner__card-side--front-aqua">
+          <div class="partner__card-data">
+            <h1 class="partner__card-title">Time Zone Aligned</h1>
+          </div>
+        </div>
+        <div class="partner__card-side partner__card-side--back">
+          <div class="partner__card-data">
+            <h1 class="partner__card-title">Time Zone Aligned</h1>
+            <p class="partner__card-info">Living and working in the same time zone removes friction and allows for seamless integration. 
+
+            Our talent wakes-up with the East Coast and ends the day with the Pacific Coast making everyday work, meetings, and collaboration natural.</p>
+          </div>
+        </div>
+      </div>
+      <div class="partner__card">
+        <div class="partner__card-side partner__card-side--front partner__card-side--front-purple">
+          <div class="partner__card-data">
+            <h1 class="partner__card-title">Experienced Team</h1>
+          </div>
+        </div>
+        <div class="partner__card-side partner__card-side--back">
+          <div class="partner__card-data">
+            <h1 class="partner__card-title">Experienced Team</h1>
+            <p class="partner__card-info">With an average of more than 10 years of experience, our Senior Engineers have the expertise your projects need.
+
+            Our 100% bilingual talented professionals have the practical experience to face every challenge and are certified in every technology and methodology.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn btn--white btn--partner">Explore Our Services ></a>
+  </section>
+
+
+  <section class="talent">
+    <div class="talent__content max-width-nav-center">
+      <div class="talent__text-content">
+        <h1 class="talent__title main__title">Our Top 1% Talent</h1>
+        <p class="talent__subtitle main__subtitle">From early on, unique talent cemented our growth and became part of our culture. That’s why we look for very specific qualities in <a href="#">our people through our rigorous selection process.</a></p>
+      </div>
+      <div class="talent__boxes">
+        <div class="talent__box">
+          <div class="talent__icon">
+            <i class="fas fa-flag-usa"></i>
+          </div>
+          <h3 class="talent__box-text">100% <br> Bilingual</h3>
+        </div>
+        <div class="talent__box">
+          <div class="talent__icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="talent__box-text">10+ years of field experience</h3>
+        </div>
+        <div class="talent__box">
+          <div class="talent__icon">
+            <i class="fas fa-user-friends"></i>
+          </div>
+          <h3 class="talent__box-text">Highly-specialized engineers</h3>
+        </div>
+        <div class="talent__box">
+          <div class="talent__icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3 class="talent__box-text">Excellent communication skills</h3>
+        </div>
+        <div class="talent__box">
+          <div class="talent__icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3 class="talent__box-text">Team <br> Players</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="work max-width-nav-center">
+    <h1 class="main__title">Our Work</h1>
+    <p class="main__subtitle">
+      We develop innovative technology solutions for Startups, Middle-Market Businesses,
+      and <strong>more than 10% of Fortune 500 Companies.</strong>
+    </p>
+    <div class="work__cards">
+      <div class="work__card">
+        <div class="work__card-img">
+          <img class="lazyload" data-src="./assets/images/Rolls-Royce.jpg" alt="work-place">
+        </div>
+        <div class="work__text-content">
+          <h1 class="work__place">Rolls-Royce</h1>
+          <p class="work__location">Energy Industrial (Nuclear) <br>
+            Mobile Development
+          </p>
+        </div>
+      </div>
+      <div class="work__card">
+        <div class="work__card-img">
+          <img class="lazyload" data-src="./assets/images/google-iphone.jpg" alt="work-place">
+        </div>
+        <div class="work__text-content">
+          <h1 class="work__place">Google</h1>
+          <p class="work__location">Technology Industry <br>
+            Testing & QA Team
+          </p>
+        </div>
+      </div>
+      <div class="work__card">
+        <div class="work__card-img">
+          <img class="lazyload" data-src="./assets/images/siriusxm.jpg" alt="work-place">
+        </div>
+        <div class="work__text-content">
+          <h1 class="work__place">SiriusXM</h1>
+          <p class="work__location">Technology Industry <br>
+            Dedicated Delivery Team
+          </p>
+        </div>
+      </div>
+      <div class="work__card">
+        <div class="work__card-img">
+          <img class="lazyload" data-src="./assets/images/netgear.jpg" alt="work-place">
+        </div>
+        <div class="work__text-content">
+          <h1 class="work__place">Netgear</h1>
+          <p class="work__location">Technology Industry <br>
+            Dedicated Delivery Team
+          </p>
+        </div>
+      </div>
+      <div class="work__card">
+        <div class="work__card-img">
+          <img class="lazyload" data-src="./assets/images/ap.jpg" alt="work-place">
+        </div>
+        <div class="work__text-content">
+          <h1 class="work__place">Associated Press</h1>
+          <p class="work__location">Media Industry  <br>
+            Dedicated Delivery Team
+          </p>
+        </div>
+      </div>
+      <div class="work__card">
+        <div class="work__card-img">
+          <img class="lazyload" data-src="./assets/images/autodesk.jpg" alt="work-place">
+        </div>
+        <div class="work__text-content">
+          <h1 class="work__place">Rolls-Royce</h1>
+          <p class="work__location">Technology Industry <br>
+            Testing & QA Team
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="experiences">
+    <div class="max-width-nav-center experiences__content">
+      <h1 class="secondary__subtitle">Clients' Experiences</h1>
+      <!-- Slider main container -->
+      <div class="swiper-container swiper-experiences">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <p class="experiences__testimonial">“Repeat business is the best testament to a team’s ability to perform, and I have no hesitations hiring them again. BairesDev’s <b>pleasant collaboration style and high-level acumen</b> rapidly catalyzed significant momentum towards achieving our objectives.”</p>
+            <div class="experiences__data">
+              <img data-src="./assets/images/profile-img/brad.webp" alt="ceo-photo" class="experiences__avatar lazyload">
+              <div class="experices__name-logo">
+                <h1 class="experiences__name">Brad Marby</h1>
+                <p class="experiences__title">Product Manager</p>
+                <img data-src="./assets/images/brand-logos/rolls-royce-logo.svg" alt="testimonial logo" class="experiences__logo lazyload">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="experiences__testimonial">“Repeat business is the best testament to a team’s ability to perform, and I have no hesitations hiring them again. BairesDev’s <b>pleasant collaboration style and high-level acumen</b> rapidly catalyzed significant momentum towards achieving our objectives.”</p>
+            <div class="experiences__data">
+              <img data-src="./assets/images/profile-img/viiveek.webp" alt="ceo-photo" class="experiences__avatar lazyload">
+              <div class="experices__name-logo">
+                <h1 class="experiences__name">Viiveek Sankar</h1>
+                <p class="experiences__title">VP of Engineering</p>
+                <img data-src="./assets/images/brand-logos/univision.svg" alt="testimonial logo" class="experiences__logo lazyload">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="experiences__testimonial">“Repeat business is the best testament to a team’s ability to perform, and I have no hesitations hiring them again. BairesDev’s <b>pleasant collaboration style and high-level acumen</b> rapidly catalyzed significant momentum towards achieving our objectives.”</p>
+            <div class="experiences__data">
+              <img data-src="./assets/images/profile-img/Patrick.webp" alt="ceo-photo" class="experiences__avatar lazyload">
+              <div class="experices__name-logo">
+                <h1 class="experiences__name">Patrick Mee</h1>
+                <p class="experiences__title">VP of Engineering</p>
+                <img data-src="./assets/images/brand-logos/nextroll.svg" alt="testimonial logo" class="experiences__logo lazyload">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="experiences__testimonial">“Repeat business is the best testament to a team’s ability to perform, and I have no hesitations hiring them again. BairesDev’s <b>pleasant collaboration style and high-level acumen</b> rapidly catalyzed significant momentum towards achieving our objectives.”</p>
+            <div class="experiences__data">
+              <img data-src="./assets/images/profile-img/ropu.webp" alt="ceo-photo" class="experiences__avatar lazyload">
+              <div class="experices__name-logo">
+                <h1 class="experiences__name">Ropu Rovagnaty</h1>
+                <p class="experiences__title">SVP, Manage Director, LATAM</p>
+                <img data-src="./assets/images/brand-logos/RGA-logo.svg" alt="testimonial logo" class="experiences__logo lazyload">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="experiences__testimonial">“Repeat business is the best testament to a team’s ability to perform, and I have no hesitations hiring them again. BairesDev’s <b>pleasant collaboration style and high-level acumen</b> rapidly catalyzed significant momentum towards achieving our objectives.”</p>
+            <div class="experiences__data">
+              <img data-src="./assets/images/profile-img/matt.jpg" alt="ceo-photo" class="experiences__avatar lazyload">
+              <div class="experices__name-logo">
+                <h1 class="experiences__name">Matt Mechan</h1>
+                <p class="experiences__title">Program Manager</p>
+                <img data-src="./assets/images/brand-logos/instructure.svg" alt="testimonial logo" class="experiences__logo lazyload">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="experiences__pagination">
+        <div class="swiper-pagination experiences-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="awards">
+    <div class="max-width-nav-center">
+      <h1 class="secondary__subtitle">
+        Awards & Recognitions
+      </h1>
+      <div class="secondary-swiper secondary-swiper__content">      
+        <!-- Slider main container -->
+        <div class="swiper-container secondary-swiper-container-awards awards__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a class="awards__link" href="#">
+                <img class="awards__img lazyload" data-src="./assets/images/awards-logos/BIG-AWARD.webp" alt="brand">
+                <p class="awards__text">Executive of the Year</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="awards__link" href="#">
+                <img class="awards__img lazyload" data-src="./assets/images/awards-logos/biba.svg" alt="brand">
+                <p class="awards__text">Best Place To Work</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="awards__link" href="#">
+                <img class="awards__img lazyload" data-src="./assets/images/awards-logos/bairesdev.svg" alt="brand">
+                <p class="awards__text">Company Of The Year 2020</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="awards__link" href="#">
+                <img class="awards__img lazyload" data-src="./assets/images/awards-logos/bairesdev-clutch.svg" alt="brand">
+                <p class="awards__text">Top Web Developers</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="awards__link" href="#">
+                <img class="awards__img lazyload" data-src="./assets/images/awards-logos/bairesdev-stevie.svg" alt="brand">
+                <p class="awards__text">Fastest Growing Company of the Year</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="awards__link" href="#">
+                <img class="awards__img lazyload" data-src="./assets/images/awards-logos/women.svg" alt="brand">
+                <p class="awards__text">Female Executive of the Year</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="awards__link" href="#">
+                <img class="awards__img lazyload" data-src="./assets/images/awards-logos/bairesdev-inc.svg" alt="brand">
+                <p class="awards__text">California´s Fastest Growing Companies</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="awards__link" href="#">
+                <img class="awards__img lazyload" data-src="./assets/images/awards-logos/comparably.svg" alt="brand">
+                <p class="awards__text">Best Company for Compensation</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev secondary-swiper-button button-awards-prev"><i class="fas fa-angle-left"></i></div>
+        <div class="swiper-button-next secondary-swiper-button button-awards-next"><i class="fas fa-angle-right"></i></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact">
+    <div class="max-width-nav-center contact__position-form">
+      <div class="form">
+        <div>        
+          <h1 class="main__title">Get In Touch</h1>
+          <h3 class="main__subtitle">Jump-start your Business with the
+            <strong>Top 1% of IT Talent.</strong>
+          </h3>
+        </div>
+        <label class="form__text" for="Name">Your Name <span class="form__field-required">*</span></label>
+        <input class="form__input" id="Name" type="name">
+        <label class="form__text" for="Email">Your Work Email <span class="form__field-required">*</span></label>
+        <input class="form__input"  form="Email" type="email">
+        <label class="form__text" for="Interest">Your Interest <span class="form__field-required">*</span></label>
+        <div class="form__radio-buttons">        
+          <div>
+            <input type="radio" name="choice" id="choice_1" checked>
+            <label for="choice_1">BairesDev services</label>
+          </div>
+          <div>
+            <input type="radio" name="choice" id="choice_2">
+            <label for="choice_2">Join your team</label>
+          </div>
+        </div>
+        <a class="btn btn--yellow btn--form" href="#">Submit</a>
+
+        <p class="form__desc">Need us to sign a non-disclosure agreement first? Please email us at <a href="#">info@bairesdev.com.</a>
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="max-width-nav-center">
+      <div class="footer__section">  
+        <img class="footer__logo lazyload" data-src="./assets/images/bairesdev-logo-white.svg" alt="footer logo">
+        <div class="footer__section-links footer__section-anchor">
+          <h3>Discover BairesDev</h3>
+          <a href="#">About Us</a>
+          <a href="#">Methodologiest</a>
+          <a href="#">Technologies</a>
+          <a href="#">Certifications</a>
+          <a href="#">Our Services</a>
+          <a href="#">IT Staffing Services</a>
+          <a href="#">Software Outsourcing</a>
+          <a href="#">Diversity</a>
+          <a href="#">Social Responsability</a>
+          <a href="#">Business Continuity</a>
+          <a href="#">Press</a>
+          <a href="#">Referral Program</a>
+        </div>
+        <div class="footer__section-links footer__section-anchor">
+          <h3>Resources</h3>
+          <a href="#">Business Cases</a>
+          <a href="#">Blog</a>
+          <a href="#">Software Technology Insights</a>
+          <a href="#">Software Development Insights</a>
+          <a href="#">Technologies Insights</a>
+          <a href="#">Industries Insights</a>
+        </div>
+        <div class="footer__section-links">
+          <a class="btn btn--black btn--footer" href="#">Contact Us ></a>
+          <a class="btn btn--black btn--footer" href="#">Subscribe ></a>
+          <h3 class="footer__section-social-title">Follow Us</h3>
+          <div class="footer__section-social-icons">
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-youtube-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i>
+          </div>
+          <div class="footer__section-phone">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+14084782739">+1 (408) 478-2739</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__section-1">
+        <div class="">
+          <a href="#">Privacy Policy</a> |
+          <a href="#">Terms of Service</a>
+        </div>
+        <p>BairesDev 2009 – 2021. All rights reserved.</p>
+        <div class="">
+          <img class="footer__logo-1 lazyload" data-src="./assets/images/dmca.svg" alt="dmca logo">
+          <a href="#">Privacy Shield Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <a href="#" class="scroll-button">
+    <i class="fa fa-angle-up"></i>
+  </a>
+
+
+<script type="text/javascript" src="vendors~main.9f97a8dad925e6de9c44.js"></script><script type="text/javascript" src="main.48c94ae09fcb783ad696.js"></script></body>
+</html>
